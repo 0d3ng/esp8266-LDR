@@ -3,6 +3,7 @@
 void setup()
 {
   Serial.begin(115200);
+  Serial.println("Contoh penggunaan sensor cahaya");
 }
 
 void loop()
@@ -10,5 +11,5 @@ void loop()
   unsigned int AnalogValue;
   AnalogValue = analogRead(PIN_A0);
   Serial.println(AnalogValue);
-  delayMicroseconds(10);
+  delay(1);
 }
